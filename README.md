@@ -16,9 +16,9 @@ install the req
 pip install -r requirements.txt
 '''
 
-'''bash
+bash
 git init
-'''
+
 
 '''bash
 dvc init
