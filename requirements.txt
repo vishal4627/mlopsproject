@@ -9,3 +9,5 @@ pandas
 pytest
 tox
 flake
+flask
+gunicorn
