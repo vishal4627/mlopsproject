@@ -38,4 +38,13 @@ stages:
     cmd: python src/log_production_model.py --config=params.yaml
     deps:
     - src/log_production_model.py
+  
+  monitor_service:
+    cmd: python src/monitor.py --config=params.yaml
+    deps:
+    - data/processed/train_winequality.csv
+    - data/processed/test_winequality.csv 
+    - src/monitor.py
+    outs:
+    - report/data_and_target_drift_dashboard.html
 
